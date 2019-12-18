@@ -11,7 +11,7 @@ COINBASE_MATURITY=10
 CHAIN=""
 PREMINED_AMOUNT=3642
 
-GENESIS_REWARD_PUBKEY=
+GENESIS_REWARD_PUBKEY=04312b38c4bc642cba78dfc24cff1771827d7a0c48ce1bd77f8920855b453abcb8a08c9d13c916536f07e4e7f5af5e6da62bd63d5f20a1b15cb249a98e37f30
 
 # dont change the following variables unless you know what you are doing
 LITECOIN_BRANCH=0.16
@@ -206,7 +206,7 @@ newcoin_replace_vars()
 
     $SED -i "s/1317972665/$TIMESTAMP/" src/chainparams.cpp
 
-    $SED -i "s;NY Times 05/Oct/2011 Steve Jobs, Apple¡¯s Visionary, Dies at 56;$PHRASE;" src/chainparams.cpp
+    $SED -i "s;NY Times 05/Oct/2011 Steve Jobs, AppleÂ¡Â¯s Visionary, Dies at 56;$PHRASE;" src/chainparams.cpp
 
     $SED -i "s/= 9333;/= $MAINNET_PORT;/" src/chainparams.cpp
     $SED -i "s/= 19335;/= $TESTNET_PORT;/" src/chainparams.cpp
